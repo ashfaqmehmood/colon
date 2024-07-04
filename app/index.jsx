@@ -15,7 +15,7 @@ const theme = {
   },
 };
 
-const LoginPage = () => {
+const IndexPage = () => {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
@@ -23,18 +23,6 @@ const LoginPage = () => {
         <View style={styles.contentContainer}>
           <Text style={styles.title}>colon</Text>
           <Text style={styles.subtitle}>Sign in to your account</Text>
-
-          <Button
-            mode="outlined"
-            onPress={() => console.log("Continue with Google")}
-            style={styles.button}
-            labelStyle={styles.buttonText}
-            icon={() => (
-              <Ionicons name="logo-google" size={20} color="#ffffff" />
-            )}
-          >
-            Continue with Google
-          </Button>
 
           <Button
             mode="outlined"
@@ -50,6 +38,18 @@ const LoginPage = () => {
             )}
           >
             Continue with Phone
+          </Button>
+
+          <Button
+            mode="outlined"
+            onPress={() => console.log("Continue with Google")}
+            style={styles.button}
+            labelStyle={styles.buttonText}
+            icon={() => (
+              <Ionicons name="logo-google" size={20} color="#ffffff" />
+            )}
+          >
+            Continue with Google
           </Button>
 
           <Button
@@ -121,4 +121,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginPage;
+export default IndexPage;
